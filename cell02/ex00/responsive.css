@@ -1,0 +1,31 @@
+html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    section {
+      display: flex;
+      height: 100%;
+      width: 100%;
+
+    }
+
+    div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      border: 1px solid black;
+      box-sizing: border-box;
+      height: 100%;
+
+    }
+
+    .box1 {
+      background-color: lightblue;
+    }
+
+    .box2 {
+      background-color: lightgreen;
+    }
