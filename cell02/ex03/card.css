@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e6e6fa; /* Lavender */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.picturesize {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.widthpic {
+    width: 75%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.block {
+    background-color: #ffffff;
+    width: 27.5%;
+    height: auto;
+    padding: 20px;
+    border: 2px solid #d8b4fe; /* Soft purple border */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(128, 90, 213, 0.2); /* Purple glow */
+}
+
+.h1size {
+    color: #6d28d9; /* Deep violet */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.psize {
+    width: 100%;
+    text-align: center;
+    color: #4b5563;
+}
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.picturesize {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.widthpic {
+    width: 75%;
+    height: 40vh;
+}
+
+.block {
+    background-color: rgb(255, 255, 255);
+    width: 27.5%;
+    height: auto;
+    padding: 20px;
+    border: 0.1px solid rgb(255, 208, 208);
+    text-align: center;
+    /* border-radius: 10%; */
+}
+
+.h1size {
+    color:rgb(0, 0, 202);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.psize {
+    width: 100%;
+    text-align: center;
+}
+.contact-bar {
+    background-color: #a78bfa; /* light purple */
+    width: 27.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(128, 90, 213, 0.2);
+}
+
+.contact-bar h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
