@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explode this balloon</title>
+    <!-- เพิ่ม jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div id="balloon" style="background-color: red; width: 200px; height: 200px; border-radius: 100%;"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            let color = ['red', 'green', 'blue'];
+            let col_dex = 0;
+            let size = 200;
+
+            $('#balloon').click(function () {
+                col_dex = (col_dex + 1) % color.length;
+                $('#balloon').css('background-color', color[col_dex]);
+
+                size += 10;
+
+                if (size > 420) {
+                    size = 200;
+                    col_dex = 0;
+                    $('#balloon').css('background-color', color[col_dex]);
+                }
+
+                $('#balloon').css({
+                    width: size + 'px',
+                    height: size + 'px'
+                });
+            });
+
+            $('#balloon').mouseleave(function () {
+                size = Math.max(200, size - 5);
+                $('#balloon').css({
+                    width: size + 'px',
+                    height: size + 'px'
+                });
+
+                col_dex = (col_dex - 1 + color.length) % color.length;
+                $('#balloon').css('background-color', color[col_dex]);
+            });
+        });
+    </script>
+</body>
+
+</html>
